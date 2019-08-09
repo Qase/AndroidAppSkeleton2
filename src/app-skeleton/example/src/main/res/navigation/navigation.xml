@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/todo_list_fragment">
+
+    <fragment
+        android:id="@+id/todo_list_fragment"
+        android:name="wtf.qase.appskeleton.example.main.todos.TodoListFragment"
+        android:label="fragment_todo_list"
+        tools:layout="@layout/fragment_todo_list">
+
+        <action
+            android:id="@+id/action_todo_list_fragment_to_settings_fragment"
+            app:destination="@id/settings_fragment" />
+        <action
+            android:id="@+id/action_todo_list_fragment_to_todo_detail_fragment"
+            app:destination="@id/todo_detail_fragment" />
+        <action
+            android:id="@+id/action_todo_list_fragment_to_create_todo_dialog_fragment"
+            app:destination="@id/create_todo_dialog_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/todo_detail_fragment"
+        android:name="wtf.qase.appskeleton.example.main.todos.TodoDetailFragment"
+        android:label="fragment_todo_detail"
+        tools:layout="@layout/fragment_todo_detail">
+
+        <argument
+            android:name="todo"
+            app:argType="wtf.qase.appskeleton.example.repo.model.Todo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="wtf.qase.appskeleton.example.main.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <dialog
+        android:id="@+id/create_todo_dialog_fragment"
+        android:name="wtf.qase.appskeleton.example.main.todos.CreateTodoDialogFragment">
+    </dialog>
+</navigation>

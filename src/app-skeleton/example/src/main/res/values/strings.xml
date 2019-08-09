@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">App Skeleton Example</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="deleted">Deleted</string>
+    <string name="todo_button_desc">Popup menu button</string>
+    <string name="todo_desc">Description</string>
+    <string name="todo_dialog_title">Create new todo</string>
+    <string name="todo_menu_delete">Delete</string>
+    <string name="todo_title">Title</string>
+    <string name="settings">Settings</string>
+</resources>
