@@ -3,6 +3,7 @@ package wtf.qase.appskeleton.example
 import org.koin.android.ext.android.inject
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
+import org.koin.core.context.GlobalContext
 import org.koin.core.context.startKoin
 import quanti.com.kotlinlog.Log
 import quanti.com.kotlinlog.android.AndroidLogger
@@ -29,10 +30,12 @@ class App : BaseApp() {
         Log.addLogger(AndroidLogger(LoggerBundle(LogLevel.DEBUG)))
         Log.useUncheckedErrorHandler()
 
-        startKoin {
-            androidContext(this@App)
-            androidLogger()
-            modules(listOf(appModule, dbModule, networkModule))
+        if (GlobalContext.getOrNull() == null) {
+            startKoin {
+                androidContext(this@App)
+                androidLogger()
+                modules(listOf(appModule, dbModule, networkModule))
+            }
         }
 
         preferences.init()

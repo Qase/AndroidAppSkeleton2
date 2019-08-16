@@ -11,6 +11,10 @@
 * Model, View, ViewModel
 * Room
 
+## TODO
+* use Jacoco 0.8.5+ if instant run is ok
+* remove Kotlin generated methods from test coverage (maybe https://github.com/fabianishere/kotlin-plugin-generated will help)
+
 ## Template
 Template project where you should start.
 

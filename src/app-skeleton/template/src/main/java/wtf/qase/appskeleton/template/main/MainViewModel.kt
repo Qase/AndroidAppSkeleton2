@@ -7,7 +7,19 @@ class MainViewModel(
     private val preferences: AppPreferences
 ) : ViewModel() {
 
-    val prefs: String by lazy {
-        preferences.toString()
+    var count: Int = preferences.count
+
+    fun increment(): Int {
+        return set(count + 1)
+    }
+
+    fun reset(): Int {
+        return set(0)
+    }
+
+    private fun set(value: Int): Int {
+        count = value
+        preferences.count = value
+        return value
     }
 }
