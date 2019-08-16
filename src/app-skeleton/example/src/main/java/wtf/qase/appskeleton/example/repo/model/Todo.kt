@@ -10,7 +10,7 @@ import java.io.Serializable
 data class Todo(
 
     @ColumnInfo(name = "title")
-    var title: String,
+    val title: String,
 
     @ColumnInfo(name = "desc")
     val desc: String,

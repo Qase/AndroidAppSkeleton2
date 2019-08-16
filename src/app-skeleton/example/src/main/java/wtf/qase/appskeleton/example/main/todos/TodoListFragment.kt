@@ -1,7 +1,12 @@
 package wtf.qase.appskeleton.example.main.todos
 
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.PopupMenu
@@ -11,7 +16,8 @@ import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.fragment_todo_list.*
+import kotlinx.android.synthetic.main.fragment_todo_list.add
+import kotlinx.android.synthetic.main.fragment_todo_list.list
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import wtf.qase.appskeleton.example.R
 import wtf.qase.appskeleton.example.repo.model.Todo
