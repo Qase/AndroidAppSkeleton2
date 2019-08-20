@@ -8,8 +8,8 @@
 
     <fragment
         android:id="@+id/main_fragment"
-        android:name="wtf.qase.appskeleton.template.main.MainFragment"
+        android:name="wtf.qase.appskeleton.template.main.DummyFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main">
+        tools:layout="@layout/fragment_dummy">
     </fragment>
 </navigation>

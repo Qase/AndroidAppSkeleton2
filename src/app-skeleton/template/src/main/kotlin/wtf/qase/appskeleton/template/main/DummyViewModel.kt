@@ -3,7 +3,7 @@ package wtf.qase.appskeleton.template.main
 import androidx.lifecycle.ViewModel
 import wtf.qase.appskeleton.template.repo.AppPreferences
 
-class MainViewModel(
+class DummyViewModel(
     private val preferences: AppPreferences
 ) : ViewModel() {
 
