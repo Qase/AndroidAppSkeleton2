@@ -31,7 +31,7 @@
 
         <argument
             android:name="todo"
-            app:argType="wtf.qase.appskeleton.example.repo.model.Todo" />
+            app:argType="wtf.qase.appskeleton.example.repository.todo.dto.db.Todo" />
     </fragment>
 
     <fragment
