@@ -28,6 +28,12 @@ android {
         }
     }
 
+    sourceSets {
+        main { java.srcDirs = ['src/main/java', 'src/main/kotlin'] }
+        test.java.srcDirs += 'src/test/kotlin'
+        androidTest.java.srcDirs += 'src/androidTest/kotlin'
+    }
+
     testOptions {
         animationsDisabled true
         unitTests {
@@ -87,7 +93,7 @@ task jacocoTestReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
 
     def fileFilter = ['**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*', '**/*Test*.*', 'android/**/*.*']
     def debugTree = fileTree(dir: "${buildDir}/tmp/kotlin-classes/debug", excludes: fileFilter)
-    def mainSrc = "${project.projectDir}/src/main/java"
+    def mainSrc = "${project.projectDir}/src/main/kotlin"
 
     classDirectories = files([debugTree])
     sourceDirectories = files([mainSrc])
