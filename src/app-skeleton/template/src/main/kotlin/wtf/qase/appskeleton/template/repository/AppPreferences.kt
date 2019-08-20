@@ -1,4 +1,4 @@
-package wtf.qase.appskeleton.template.repo
+package wtf.qase.appskeleton.template.repository
 
 import android.content.Context
 import wtf.qase.appskeleton.core.BasePreferences

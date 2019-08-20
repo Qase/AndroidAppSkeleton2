@@ -1,9 +1,9 @@
-package wtf.qase.appskeleton.example.module
+package wtf.qase.appskeleton.example.di
 
 import androidx.room.Room
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
-import wtf.qase.appskeleton.example.repo.AppDatabase
+import wtf.qase.appskeleton.example.repository.AppDatabase
 
 val dbModule = module {
     single {

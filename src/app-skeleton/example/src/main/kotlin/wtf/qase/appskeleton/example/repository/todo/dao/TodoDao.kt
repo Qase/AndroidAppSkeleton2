@@ -1,4 +1,4 @@
-package wtf.qase.appskeleton.example.repo.dao
+package wtf.qase.appskeleton.example.repository.todo.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -6,8 +6,8 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
-import wtf.qase.appskeleton.example.repo.AppDatabase
-import wtf.qase.appskeleton.example.repo.model.Todo
+import wtf.qase.appskeleton.example.repository.AppDatabase
+import wtf.qase.appskeleton.example.repository.todo.dto.db.Todo
 
 @Dao
 interface TodoDao {

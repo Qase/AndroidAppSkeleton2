@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.fragment_todo_list.add
 import kotlinx.android.synthetic.main.fragment_todo_list.list
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import wtf.qase.appskeleton.example.R
-import wtf.qase.appskeleton.example.repo.model.Todo
+import wtf.qase.appskeleton.example.repository.todo.dto.db.Todo
 
 class TodoListFragment : Fragment() {
     private val vm: TodoListViewModel by viewModel()

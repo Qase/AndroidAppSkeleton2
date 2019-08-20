@@ -6,7 +6,7 @@ import org.koin.core.KoinComponent
 import org.koin.core.inject
 import quanti.com.kotlinlog.Log
 import wtf.qase.appskeleton.core.service.Subservice
-import wtf.qase.appskeleton.example.repo.api.UserApi
+import wtf.qase.appskeleton.example.repository.user.dto.api.UserApi
 import java.util.concurrent.TimeUnit
 
 class WatchdogSubservice : Subservice(), KoinComponent {

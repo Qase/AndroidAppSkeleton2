@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_todo_detail.desc
 import kotlinx.android.synthetic.main.fragment_todo_detail.title
 import wtf.qase.appskeleton.example.R
-import wtf.qase.appskeleton.example.repo.model.Todo
+import wtf.qase.appskeleton.example.repository.todo.dto.db.Todo
 
 class TodoDetailFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =

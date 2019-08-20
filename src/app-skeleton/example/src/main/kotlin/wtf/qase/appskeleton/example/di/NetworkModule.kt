@@ -1,4 +1,4 @@
-package wtf.qase.appskeleton.example.module
+package wtf.qase.appskeleton.example.di
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -9,7 +9,7 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import wtf.qase.appskeleton.example.BuildConfig
-import wtf.qase.appskeleton.example.repo.api.UserApi
+import wtf.qase.appskeleton.example.repository.user.dto.api.UserApi
 
 val networkModule = module {
     single { provideGson() }
@@ -49,4 +49,5 @@ fun provideRetrofit(client: OkHttpClient, gson: Gson): Retrofit = Retrofit.Build
     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
     .build()
 
-fun provideLoginApi(retrofit: Retrofit): UserApi = retrofit.create(UserApi::class.java)
+fun provideLoginApi(retrofit: Retrofit): UserApi = retrofit.create(
+    UserApi::class.java)

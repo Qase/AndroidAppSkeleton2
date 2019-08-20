@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.listitem_todo.view.*
 import wtf.qase.appskeleton.example.R
-import wtf.qase.appskeleton.example.repo.model.Todo
+import wtf.qase.appskeleton.example.repository.todo.dto.db.Todo
 
 class TodoAdapter(
     private var items: List<Todo>,

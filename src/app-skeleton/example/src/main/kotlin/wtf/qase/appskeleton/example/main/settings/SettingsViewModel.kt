@@ -3,9 +3,9 @@ package wtf.qase.appskeleton.example.main.settings
 import androidx.lifecycle.ViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import wtf.qase.appskeleton.example.repo.AppPreferences
-import wtf.qase.appskeleton.example.repo.api.UserApi
-import wtf.qase.appskeleton.example.repo.dto.LoginRequest
+import wtf.qase.appskeleton.example.repository.AppPreferences
+import wtf.qase.appskeleton.example.repository.user.dto.api.UserApi
+import wtf.qase.appskeleton.example.repository.user.dto.LoginRequest
 
 class SettingsViewModel(
     private val preferences: AppPreferences,

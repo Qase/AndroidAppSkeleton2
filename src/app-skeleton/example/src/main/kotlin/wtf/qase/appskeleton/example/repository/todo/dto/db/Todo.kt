@@ -1,9 +1,9 @@
-package wtf.qase.appskeleton.example.repo.model
+package wtf.qase.appskeleton.example.repository.todo.dto.db
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import wtf.qase.appskeleton.example.repo.AppDatabase
+import wtf.qase.appskeleton.example.repository.AppDatabase
 import java.io.Serializable
 
 @Entity(tableName = AppDatabase.TABLE_TODO)

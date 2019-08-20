@@ -19,10 +19,10 @@ import org.mockito.junit.MockitoJUnit
 import org.mockito.junit.MockitoRule
 import retrofit2.Response
 import wtf.qase.appskeleton.example.main.settings.SettingsViewModel
-import wtf.qase.appskeleton.example.repo.AppPreferences
-import wtf.qase.appskeleton.example.repo.api.UserApi
-import wtf.qase.appskeleton.example.repo.dto.LoginRequest
-import wtf.qase.appskeleton.example.repo.dto.LoginResponse
+import wtf.qase.appskeleton.example.repository.AppPreferences
+import wtf.qase.appskeleton.example.repository.user.dto.api.UserApi
+import wtf.qase.appskeleton.example.repository.user.dto.LoginRequest
+import wtf.qase.appskeleton.example.repository.user.dto.LoginResponse
 
 @RunWith(AndroidJUnit4::class)
 class SettingsTest : KoinTest {
@@ -59,7 +59,12 @@ class SettingsTest : KoinTest {
     @Test
     fun login() {
         `when`(userApi.login(LoginRequest("a", "b")))
-            .thenReturn(Single.just(Response.success(LoginResponse("a", 1))))
+            .thenReturn(Single.just(Response.success(
+                LoginResponse(
+                    "a",
+                    1
+                )
+            )))
 
         val response = viewModel.login("a", "b").blockingGet()
         assertTrue(response.isSuccessful)

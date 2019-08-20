@@ -1,4 +1,4 @@
-package wtf.qase.appskeleton.example.module
+package wtf.qase.appskeleton.example.di
 
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -7,7 +7,7 @@ import wtf.qase.appskeleton.example.main.settings.SettingsViewModel
 import wtf.qase.appskeleton.example.main.todos.CreateTodoViewModel
 import wtf.qase.appskeleton.example.main.todos.TodoDetailViewModel
 import wtf.qase.appskeleton.example.main.todos.TodoListViewModel
-import wtf.qase.appskeleton.example.repo.AppPreferences
+import wtf.qase.appskeleton.example.repository.AppPreferences
 import wtf.qase.appskeleton.example.service.WatchdogSubservice
 
 val appModule = module {

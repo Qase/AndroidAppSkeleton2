@@ -5,8 +5,8 @@ import androidx.lifecycle.ViewModel
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import wtf.qase.appskeleton.example.repo.model.Todo
-import wtf.qase.appskeleton.example.repo.dao.TodoDao
+import wtf.qase.appskeleton.example.repository.todo.dto.db.Todo
+import wtf.qase.appskeleton.example.repository.todo.dao.TodoDao
 
 class TodoListViewModel(
     private val todoDao: TodoDao

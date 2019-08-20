@@ -1,4 +1,4 @@
-package wtf.qase.appskeleton.example.repo.dto
+package wtf.qase.appskeleton.example.repository.user.dto
 
 import com.google.gson.annotations.Expose
 

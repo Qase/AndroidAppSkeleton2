@@ -1,7 +1,7 @@
 package wtf.qase.appskeleton.template.main
 
 import androidx.lifecycle.ViewModel
-import wtf.qase.appskeleton.template.repo.AppPreferences
+import wtf.qase.appskeleton.template.repository.AppPreferences
 
 class DummyViewModel(
     private val preferences: AppPreferences

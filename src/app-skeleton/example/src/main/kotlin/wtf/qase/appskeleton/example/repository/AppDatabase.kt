@@ -1,11 +1,11 @@
-package wtf.qase.appskeleton.example.repo
+package wtf.qase.appskeleton.example.repository
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
-import wtf.qase.appskeleton.example.repo.dao.TodoDao
-import wtf.qase.appskeleton.example.repo.model.Todo
+import wtf.qase.appskeleton.example.repository.todo.dao.TodoDao
+import wtf.qase.appskeleton.example.repository.todo.dto.db.Todo
 
 @Database(
     entities = [Todo::class],

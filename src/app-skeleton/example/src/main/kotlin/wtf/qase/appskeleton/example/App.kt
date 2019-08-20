@@ -10,10 +10,10 @@ import quanti.com.kotlinlog.android.AndroidLogger
 import quanti.com.kotlinlog.base.LogLevel
 import quanti.com.kotlinlog.base.LoggerBundle
 import wtf.qase.appskeleton.core.BaseApp
-import wtf.qase.appskeleton.example.module.appModule
-import wtf.qase.appskeleton.example.module.dbModule
-import wtf.qase.appskeleton.example.module.networkModule
-import wtf.qase.appskeleton.example.repo.AppPreferences
+import wtf.qase.appskeleton.example.di.appModule
+import wtf.qase.appskeleton.example.di.dbModule
+import wtf.qase.appskeleton.example.di.networkModule
+import wtf.qase.appskeleton.example.repository.AppPreferences
 
 class App : BaseApp() {
 
