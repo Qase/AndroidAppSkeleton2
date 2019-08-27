@@ -30,7 +30,6 @@ build/
 # Gradle
 .gradle
 gradle/wrapper
-gradlew*
 
 # Mac OS X clutter
 *.DS_Store
@@ -52,8 +51,6 @@ proguard/
 # Crashlytics
 com_crashlytics_export_strings.xml
 crashlytics.properties
-
-gradle.properties
 
 # Per project specifics
 

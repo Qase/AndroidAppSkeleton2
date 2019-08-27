@@ -1,3 +1,6 @@
+[![](https://jitpack.io/v/Qase/AndroidAppSkeleton2.svg)](https://jitpack.io/#Qase/AndroidAppSkeleton2)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # App Skeleton
 
 ## Features
