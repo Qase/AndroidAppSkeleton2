@@ -1,15 +1,30 @@
 buildscript {
+    ext.appcompat_version = '1.1.0'
+    ext.androidx_junit_version = '1.1.1'
     ext.architecture_components_version = '1.1.1'
+    ext.compile_sdk_version = 28
+    ext.constraintlayout_version = '1.1.3'
+    ext.converter_scalars_version = '2.3.0'
+    ext.core_ktx_version = '1.2.0'
+    ext.espresso_version = '3.2.0'
     ext.jacoco_version = '0.8.1' // 0.8.2 causes problem with Android Studio and instant run
+    ext.junit_version = '4.13'
     ext.koin_version = '2.0.1'
     ext.kotlin_logger_version = '2.1.9'
-    ext.kotlin_version = '1.3.41'
+    ext.kotlin_version = '1.3.61'
     ext.ktlint_version = '8.2.0'
-    ext.navigation_version = "2.2.0-alpha01"
+    ext.logging_interceptor_version = '3.12.1'
+    ext.min_sdk_version = 22
+    ext.mockito_core_version = '2.23.0'
+    ext.mockito_inline_version = '2.21.0'
+    ext.navigation_version = "2.3.0-alpha01"
     ext.retrofit_version = '2.5.0'
-    ext.room_version = '2.1.0'
+    ext.robolectric_version = '4.3'
+    ext.room_version = '2.2.3'
+    ext.runner_version = '1.2.0'
     ext.rxandroid_version = '2.1.0'
     ext.rxjava_version = '2.2.5'
+    ext.target_version = 28
 
     repositories {
         google()
@@ -18,7 +33,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath 'com.android.tools.build:gradle:3.5.3'
         classpath "org.jacoco:org.jacoco.core:$jacoco_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jlleitschuh.gradle:ktlint-gradle:$ktlint_version"
