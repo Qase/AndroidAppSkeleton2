@@ -124,9 +124,9 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'crea
     def debugTree = fileTree(dir: "${buildDir}/tmp/kotlin-classes/debug", excludes: fileFilter)
     def mainSrc = "${project.projectDir}/src/main/kotlin"
 
-    classDirectories = files([debugTree])
-    sourceDirectories = files([mainSrc])
-    executionData = fileTree(dir: project.buildDir, includes: [
+    classDirectories.from = files([debugTree])
+    sourceDirectories.from = files([mainSrc])
+    executionData.from = fileTree(dir: project.buildDir, includes: [
         'jacoco/testDebugUnitTest.exec',
         'outputs/code_coverage/debugAndroidTest/connected/*coverage.ec' // Only if you want merge unit tests and instrumental tests
     ])
