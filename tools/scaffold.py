@@ -5,6 +5,11 @@ from shutil import copytree, ignore_patterns, rmtree
 import click
 import re
 import subprocess
+import sys
+
+
+# Allow only Python3
+assert sys.version_info.major >= 3
 
 
 @click.group()
