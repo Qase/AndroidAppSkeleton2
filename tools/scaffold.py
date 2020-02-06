@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from os import mkdir, rename
+from os import mkdir, path as os_path, rename
 from shutil import copytree, ignore_patterns, rmtree
 import click
 import re
@@ -23,7 +23,12 @@ def new():
 def project(path, package):
     """Create new project from template
     """
-    copytree('../', path, ignore=ignore_patterns(
+    dir_path = os_path.dirname(os_path.realpath(__file__))
+    dir_path = os_path.abspath(dir_path + '/../')
+    if os_path.abspath(path).startswith(dir_path):
+        raise Exception("Can't create project inside App Skeleton directory!")
+
+    copytree(dir_path, path, ignore=ignore_patterns(
         '.git', '.gradle', '.idea', 'build', 'example',
         '*.iml', '*.swp',
     ))
